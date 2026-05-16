@@ -75,6 +75,14 @@ function playGame() {
             computerScore++;
         }
     }
+
+    if (humanScore > computerScore) {
+        console.log("You Win!");
+    } else if (humanScore < computerScore) {
+        console.log("You Lose!");
+    } else {
+        console.log("You Tied.")
+    }
 }
 
 playGame();
