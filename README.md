@@ -1,11 +1,7 @@
 # rock-paper-scissors
 
-Console based game. 
+Simple button-based game.
 
-5 rounds are played between you and the computer. 
-
-Pick between "rock", "paper", or "scissors" and enter it in the prompt (case insensitive).
-
-Winner is declared at the end.
+Keep picking 1 of 3 choices until you win or the computer wins. 
 
 Refresh page to play again.
