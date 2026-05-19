@@ -58,3 +58,10 @@ function playRound(humanChoice, computerChoice) {
         console.log("You didn't pick Rock, Paper, or Scissors...");
     }
 }
+
+const buttons = document.querySelectorAll("button")
+buttons.forEach(function(button){
+    button.addEventListener("click", function(){
+        playRound(button.textContent, getComputerChoice());
+    });
+})
