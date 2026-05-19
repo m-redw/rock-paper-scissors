@@ -97,14 +97,15 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-buttons.forEach(function(button){
-    button.onclick = function(){
-        playRound(button.textContent, getComputerChoice());
-    };
-})
-
 function disableButtons() {
     buttons.forEach(function(button){
         button.onclick = function(){};
     });
 }
+
+// Init buttons with onclick event listener
+buttons.forEach(function(button){
+    button.onclick = function(){
+        playRound(button.textContent, getComputerChoice());
+    };
+});
