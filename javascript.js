@@ -58,31 +58,3 @@ function playRound(humanChoice, computerChoice) {
         console.log("You didn't pick Rock, Paper, or Scissors...");
     }
 }
-
-function playGame() {
-    let humanScore = 0;
-    let computerScore = 0;
-
-    for (let i = 1; i <= 5; i++) {
-        const playerSelection = getHumanChoice();
-        const computerSelection = getComputerChoice();
-        
-        let winner = playRound(playerSelection, computerSelection);
-        
-        if (winner === "player") {
-            humanScore++;
-        } else if (winner === "computer") {
-            computerScore++;
-        }
-    }
-
-    if (humanScore > computerScore) {
-        console.log("You Win!");
-    } else if (humanScore < computerScore) {
-        console.log("You Lose!");
-    } else {
-        console.log("You Tied.")
-    }
-}
-
-playGame();
